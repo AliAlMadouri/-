@@ -12,4 +12,4 @@
 ## 🚀 التشغيل  
 1. انسخ المستودع:  
    ```bash
-   git clone https://github.com/AliAlMadouri/smart-image-editor.git
+   git clone https://github.com/AliAlMadouri
