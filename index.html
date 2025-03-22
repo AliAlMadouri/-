@@ -1,0 +1,77 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محرر الصور - Photo Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> 💫 محرر الصور الرائع</h1>
+            <input type="file" id="file-input" hidden accept="image/*">
+            <button id="upload-btn">رفع صورة ⬆️</button>
+        </header>
+
+        <main>
+            <div class="image-container">
+                <img id="preview-image" src="#" alt="الصورة المرفوعة">
+            </div>
+
+            <div class="edit-tools">
+                <div class="filter">
+                    <label>العرض (px)</label>
+                    <input type="range" id="width" min="50" max="2000" value="100" disabled>
+                    <input type="number" id="width-input" class="size-input" disabled>
+                </div>
+
+                <div class="filter">
+                    <label>الارتفاع (px)</label>
+                    <input type="range" id="height" min="50" max="2000" value="100" disabled>
+                    <input type="number" id="height-input" class="size-input" disabled>
+                </div>
+
+                <div class="filter">
+                    <label>
+                        <input type="checkbox" id="lock-aspect" checked>
+                        الحفاظ على النسبة
+                    </label>
+                </div>
+
+                <div class="filter">
+                    <label>السطوع</label>
+                    <input type="range" id="brightness" min="0" max="200" value="100" disabled>
+                    <span id="brightness-value" class="filter-value">100%</span>
+                </div>
+
+                <div class="filter">
+                    <label>التباين</label>
+                    <input type="range" id="contrast" min="0" max="200" value="100" disabled>
+                    <span id="contrast-value" class="filter-value">100%</span>
+                </div>
+
+                <div class="filter">
+                    <label>التشبع</label>
+                    <input type="range" id="saturation" min="0" max="200" value="100" disabled>
+                    <span id="saturation-value" class="filter-value">100%</span>
+                </div>
+
+                <div class="format-select">
+                    <label>اختر الصيغة:</label>
+                    <select id="format-select" disabled>
+                        <option value="image/jpeg">JPEG</option>
+                        <option value="image/png">PNG</option>
+                        <option value="image/webp">WEBP</option>
+                    </select>
+                </div>
+
+                <button id="save-btn" disabled>💾 حفظ الصورة</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

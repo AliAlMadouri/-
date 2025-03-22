@@ -1,0 +1,119 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+button {
+    background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.image-container {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#preview-image {
+    max-width: 100%;
+    max-height: 60vh;
+    border-radius: 10px;
+    display: none;
+}
+
+.edit-tools {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+.filter label {
+    display: inline-block;
+    width: 80px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+input[type="range"] {
+    width: 60%;
+    height: 7px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    margin: 0 15px;
+}
+
+.filter-value {
+    color: #6c757d;
+    font-weight: bold;
+}
+
+.format-select {
+    margin: 25px 0;
+}
+
+select {
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.size-input {
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+}
+
+.filter input[type="checkbox"] {
+    margin-left: 10px;
+    transform: scale(1.2);
+}
